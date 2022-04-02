@@ -1,0 +1,239 @@
+@import url(./main.css);
+@import url(./media.css);
+@import url(./fonts.css);
+
+:root {
+    --nsr: "NotoSans";
+    --nsl: "NotoSans";
+    --nsm: "NotoSans";
+    --nssm: "NotoSans";
+    --black: #313131;
+    --dots: #ABABAB;
+    --body: #FFFFFF;
+    --tran: 0.5s;
+}
+
+@media(prefers-color-scheme:dark) {
+    .logo::after {
+        content: url(../images/Logo2.png);
+    }
+
+    body {
+        background-color: var(--black);
+    }
+
+    .nav1 {
+        background-color: #0C0C0C;
+    }
+
+    .text {
+        background-color: #313131;
+        border: 1px solid white;
+    }
+
+    .button {
+        border: 1px solid white;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .nav-link:hover {
+        color: white;
+    }
+
+    .slide_title {
+        color: white;
+    }
+
+
+    .button:hover {
+        transition: 0.5s;
+        background-color: white;
+        color: var(--black);
+    }
+
+    .link {
+        border: 1px solid white;
+        transition: 0.5s;
+    }
+
+    .link:hover {
+        background-color: white;
+        color: #313131;
+    }
+
+    .carousel-indicators button.active {
+        background-color: white !important;
+    }
+
+    .section2_title {
+        color: white;
+    }
+
+    .phone_link {
+        border: 1px solid white;
+        padding-top: 3px;
+    }
+
+    .phone_link:hover {
+        background-color: white !important;
+        color: #313131;
+    }
+
+    .shadoww:hover {
+        transition: 0.5s;
+        background: radial-gradient(41.86% 41.86% at 50% 50%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .shadoww {
+        z-index: -20;
+        top: -50px;
+        left: 58px;
+        position: absolute;
+        width: 400px;
+        height: 520px;
+        background: radial-gradient(41.86% 41.86% at 50% 50%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
+        transform: 0.5s;
+    }
+
+    .carousel-item {
+        position: relative;
+    }
+
+    .back {
+        z-index: -20;
+        top: 193px;
+        left: 10px;
+        position: absolute;
+        height: 35px;
+        width: 280px;
+        transition: var(--tran);
+        transform: scale(0.3);
+        /* background: radial-gradient(39.9% 39.9% at 50% 38.67%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%); */
+    }
+
+    .phone:hover .back {
+        transition: var(--tran);
+        transform: scale(1);
+        background: radial-gradient(39.9% 39.9% at 50% 38.67%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .shrink {
+        position: relative;
+    }
+
+    .phone_title,
+    .phone_text {
+        color: white;
+    }
+
+    .carousel-item {
+        position: relative;
+        filter: drop-shadow(-10px 5px 3px rgba(0, 0, 0, 0.25));
+    }
+
+    .slide_shadow img {
+        width: 400px;
+        height: 600px;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: -50px;
+        left: 100px;
+    }
+
+    .phone {
+        border: 1px solid #313131;
+        transform: scale(1);
+    }
+
+    /* .phone:hover {
+        transform: scale(1.1);
+    } */
+
+    .ps_img::after {
+        content: url(../images/ps1.png);
+    }
+
+    .grid_box {
+        box-shadow: -10px 5px 4px 0px #00000040;
+    }
+
+
+    .section4_title {
+        color: white;
+    }
+
+    .computer_back {
+        display: block;
+        width: 300px;
+        height: 230px;
+        position: absolute;
+        z-index: -1;
+        transition: var(--tran);
+        background-color: var(--black);
+        transform: scale(0.3);
+    }
+
+    .phone:hover .computer_back {
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
+        transition: var(--tran);
+        transform: scale(1);
+    }
+
+    .watch_back {
+        display: block;
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        z-index: -1;
+        transition: var(--tran);
+        background-color: var(--black);
+        transform: scale(0.3);
+    }
+
+    .phone:hover .watch_back {
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
+        transition: var(--tran);
+        transform: scale(1);
+    }
+
+    .intro_title {
+        color: white;
+    }
+
+    .intro p {
+        color: white;
+    }
+
+    .intro_li {
+        color: white;
+    }
+
+    .intro h3 {
+        color: white;
+    }
+
+    .vr_title {
+        color: white;
+    }
+
+    .vr_text {
+        color: white;
+    }
+
+    @media(max-width:342px) {
+        .back {
+            top: 160px;
+            left: 0px;
+            width: 250px;
+        }
+
+        .computer_back {
+            width: 250px;
+        }
+    }
+
+}
